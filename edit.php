@@ -5,7 +5,22 @@
 	<div class="row">
 			<h2>Edit <small><i class="fa fa-hand-o-right"></i>&nbsp; <?=isset($bin_name)? ucwords($bin_name):''?></small></h2>
 	</div>
-
+ <form method="post" name="change_form">
+      <input type="hidden" name="action" value="change_bin">
+      <div class="form-group">
+        <div class="col-md-12">
+          <?=bins_dd(isset($_GET['bin'])?$_GET['bin']:false);?>
+          <script>
+            function change_dd(ele){
+              // console.log($(ele).val());
+              window.location = "edit.php?action=edit_bin&bin="+$(ele).val();
+            }
+          </script>
+        </div>
+      </div>
+  </form>
+  <br>
+  <br>
   <div class="row">
     <!-- place in header of your html document -->
     <script>

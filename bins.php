@@ -1,29 +1,6 @@
 <?@require_once('header.php');?>
 	
-	<?php
-
-		$dir    = $sly->base_path;
-		$files1 = scandir($dir);
-		
-		$bins = false;
-
-		foreach ($files1 as $k => $f) {
-			$ext = pathinfo($f, PATHINFO_EXTENSION);
-			if($ext !== "bin"){ continue; }
-
-			$bin_file = $sly->base_path."\\".$f; 
-			$string = file_get_contents($bin_file);
-
-			$t = str_replace('.bin','', $f);
-			
-			$bins[]	= array(
-					'bin' => $t,
-					'content' => $string,
-					'title' => str_replace('_', ' ', $t)
-				);
-		}
-		// vp($bins);
-	?>
+	<?php $bins = get_bins(); ?>
 
 	<div class="row">
 			<h2>Bin Files</h2>
