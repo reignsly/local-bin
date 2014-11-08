@@ -1,0 +1,4 @@
+&lt;p&gt;&lt;strong&gt;SMALLWORLD DB -&amp;gt; dump database to db.ql&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mysqldump -h db477243065.db.1and1.com -u dbo477243065 -p4a24ed9fdb db477243065 &amp;gt; db.sql&lt;/li&gt;
+&lt;/ul&gt;
