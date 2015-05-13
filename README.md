@@ -3,7 +3,7 @@ local-bin
 
 This will serve as your local bin or local paste bin.
 I created this application to store my notes on my local machine.
-You are free to use, edit and distribute my code as long as you reference my name (Sylvester Dodoy Palitog) as your contributor.
+You are free to use, edit and distribute my code as long as you reference this repo as your contributor.
 
 Thanks To :
 =========
